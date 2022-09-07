@@ -1,6 +1,6 @@
 :root {
-  --text-shadow-color: #ff9c99;
-  --text-main-color: #d74742;
+  --text-shadow-color: #729d39;
+  --text-main-color: #c6e377;
 }
 * {
   box-sizing: border-box;
@@ -24,19 +24,22 @@ code {
 
 h1 {
   color: var(--text-main-color);
-  font-family: "Rouge Script", cursive;
-  font-size: 130px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 320px;
   font-weight: normal;
-  line-height: 48px;
-  margin: 0 0 50px;
+  line-height: 50px;
+  margin: 50px;
   text-align: center;
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
+  text-shadow: 22px 34px 50px var(--text-shadow-color);
+  height: 55px;
 }
 
 p {
-  color: #ffffff;
-  font-family: "Carme", sans-serif;
-  font-size: 16px;
+  color: #36622b;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .container {
@@ -49,14 +52,18 @@ p {
   align-items: center;
 }
 .timer__wrapper {
-  border-radius: 24px;
-  background-color: var(--text-shadow-color);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  border-radius: 12px;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
 }
-.timer__display {
-  padding-left: 1.5em;
-}
+/* .timer__display { */
+/* padding-left: 1.5em; */
+/* } */
 .timer__display > p {
   font-size: 5em;
 }
@@ -69,12 +76,12 @@ p {
   align-items: center;
 }
 .button {
-  color: white;
+  color: #fbfad3;
   background-color: var(--text-shadow-color);
   font-size: 1.5em;
-  border-radius: 100vh;
-  border: 1px solid white;
-  padding: 1em;
+  border-radius: 18px;
+  border: 1px solid #fbfad3;
+  padding: 0.8em;
   transition: ease-in-out 0.3s;
 }
 .button:active {
@@ -85,7 +92,7 @@ p {
   transform: scale(120%);
 }
 .button:disabled {
-  background-color: rgb(170, 164, 164);
+  background-color: #1e5128;
 }
 /* .button.active {
   border: 1px solid var(--text-main-color);
