@@ -6,14 +6,11 @@ const useTimer = (ini = 0) => {
   const isStart = useRef(true);
   const active = useRef();
   const refInterval = useRef(0);
-
   const startTimer = () => {
     active.current.disabled = true;
     isStart.current = true;
     refInterval.current = setInterval(() => {
-      if (isStart.current) {
-        setTime((time) => time + 1);
-      }
+      setTime((time) => time + 1);
     }, 1000);
   };
   const stopTimer = () => {
